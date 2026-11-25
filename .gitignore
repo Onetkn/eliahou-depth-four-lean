@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.cache/
+.tools/
+*.aux
+*.log
+*.out
+*.toc
+lean/.lake/
+

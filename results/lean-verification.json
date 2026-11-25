@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.36.0",
+  "required_main_theorem": "Eliahou.DepthFour.depth_four_nonneg",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "stages": [
+    {
+      "command": [
+        "lake.exe",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake.exe",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "declarations": {
+    "Eliahou.DepthFour.depth_four_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Eliahou.DepthFour.card_left_offsets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Eliahou.DepthFour.twice_card_rightDecomp_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Eliahou.Presentation.numericalSemigroup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Eliahou.Presentation.primitive_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Eliahou.example56_semigroup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Eliahou.example90_semigroup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Eliahou.example56_multiplicity": [],
+    "Eliahou.example90_multiplicity": [],
+    "Eliahou.example56_counts": [],
+    "Eliahou.example90_counts": [],
+    "Eliahou.example56_eliahou": [],
+    "Eliahou.example90_eliahou": [],
+    "Eliahou.decomposable_step_identity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Eliahou.primitive_step_identity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Eliahou.decomposable_step_nondecreasing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Eliahou.primitive_step_nondecreasing": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "errors": [],
+  "expected_declarations": [
+    "Eliahou.DepthFour.depth_four_nonneg",
+    "Eliahou.DepthFour.card_left_offsets",
+    "Eliahou.DepthFour.twice_card_rightDecomp_le",
+    "Eliahou.Presentation.numericalSemigroup",
+    "Eliahou.Presentation.primitive_iff",
+    "Eliahou.example56_semigroup",
+    "Eliahou.example90_semigroup",
+    "Eliahou.example56_multiplicity",
+    "Eliahou.example90_multiplicity",
+    "Eliahou.example56_counts",
+    "Eliahou.example90_counts",
+    "Eliahou.example56_eliahou",
+    "Eliahou.example90_eliahou",
+    "Eliahou.decomposable_step_identity",
+    "Eliahou.primitive_step_identity",
+    "Eliahou.decomposable_step_nondecreasing",
+    "Eliahou.primitive_step_nondecreasing"
+  ]
+}
